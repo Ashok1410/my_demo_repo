@@ -8,3 +8,16 @@ resource "google_bigquery_dataset" "my_dataset" {
     environment = "dev"
   }
 }
+
+resource "google_bigquery_table" "my_table" {
+  dataset_id = var.dataset_id   # Assuming this is already defined
+  table_id   = "name_list"
+
+  schema = file("schema.json")  # Define schema separately
+
+  time_partitioning {
+    type = "DAY"
+  }
+
+  deletion_protection = false
+}
