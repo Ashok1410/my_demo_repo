@@ -1,0 +1,17 @@
+[
+  {
+    "name": "Name",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "Gender",
+    "type": "STRING",
+    "mode": "REQUIRED"
+  },
+  {
+    "name": "ID",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  }
+]
