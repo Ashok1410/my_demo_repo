@@ -1,5 +1,4 @@
 gcp-key.json
-terraform.tfvars
 .terraform
 .venv
 .terraform.lock.hcl

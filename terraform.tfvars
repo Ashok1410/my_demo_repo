@@ -1,0 +1,5 @@
+project_id  = "copper-eye-461406-a8"
+region      = "us-central1"
+dataset_id  = "demo_dataset"
+location    = "US"
+iam_user_email = "ash-itzme@copper-eye-461406-a8.iam.gserviceaccount.com"
