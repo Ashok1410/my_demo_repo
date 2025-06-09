@@ -1,5 +1,5 @@
 resource "google_dataflow_job" "big_data_job" {
-  name              = "dataflow-job"
+  name              = "dataflow-job" # df job name
   template_gcs_path = "gs://dataflow-templates/latest/GCS_Text_to_BigQuery"
   temp_gcs_location = "gs://copper-eye-461406-a8-bq-data-d69becfc/Temp"
   
