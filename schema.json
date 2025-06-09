@@ -1,19 +1,17 @@
-{
-  "fields": [
-    {
-      "name": "Name",
-      "type": "STRING",
-      "mode": "NULLABLE"
-    },
-    {
-        "name": "Gender",
-        "type": "STRING",
-        "mode": "NULLABLE"
-    },  
-    { 
-        "name": "ID",
-        "type": "INTEGER",
-        "mode": "NULLABLE"
-    }
-  ]
-}
+[
+  {
+    "name": "Name",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  },
+  {
+    "name": "Gender",
+    "type": "STRING",
+    "mode": "NULLABLE"
+  }, 
+  {
+    "name": "ID",
+    "type": "INTEGER",
+    "mode": "NULLABLE"
+  }
+]
