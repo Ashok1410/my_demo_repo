@@ -1,6 +1,6 @@
 resource "google_dataflow_job" "big_data_job" {
   name              = "dataflow-job"
-  template_gcs_path = "gs://dataflow-templates/latest/GCS_Text_to_BigQuery"
+  template_gcs_path = "gs://dataflow-templates/latest/GCS_CSV_to_BigQuery"
   temp_gcs_location = "gs://copper-eye-461406-a8-bq-data-d69becfc/Temp"
   
   parameters = {
