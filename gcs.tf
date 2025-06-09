@@ -9,3 +9,4 @@ resource "google_storage_bucket" "my_data_bucket" {
 resource "random_id" "suffix" {
   byte_length = 4
 }
+

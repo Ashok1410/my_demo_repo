@@ -11,3 +11,18 @@ resource "google_storage_bucket_iam_member" "allow_bigquery_to_read_bucket" {
   member = "serviceAccount:${var.iam_user_email}"
   depends_on = [google_storage_bucket.my_data_bucket]
 }
+
+# Grant IAM roles to the service account
+resource "google_project_iam_member" "dataflow_permissions" {
+  for_each = toset([
+    "roles/dataflow.developer",
+    "roles/storage.objectViewer",
+    "roles/storage.objectCreator",
+    "roles/bigquery.dataEditor",
+    "roles/logging.logWriter"
+  ])
+
+  project = var.project_id
+  role    = each.key
+  member  = "serviceAccount:${var.iam_user_email}"
+}
