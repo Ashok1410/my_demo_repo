@@ -2,12 +2,12 @@
   {
     "name": "Name",
     "type": "STRING",
-    "mode": "REQUIRED"
+    "mode": "NULLABLE"
   },
   {
     "name": "Gender",
     "type": "STRING",
-    "mode": "REQUIRED"
+    "mode": "NULLABLE"
   },
   {
     "name": "ID",
