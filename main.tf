@@ -11,7 +11,7 @@ resource "google_bigquery_dataset" "my_dataset" {
 
 resource "google_bigquery_table" "my_table" {
   dataset_id = var.dataset_id   # Assuming this is already defined
-  table_id   = "name_list"
+  table_id   = "name_list" # table name
 
   schema = file("schema.json")  # Define schema separately
 

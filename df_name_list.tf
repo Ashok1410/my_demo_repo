@@ -16,7 +16,7 @@ resource "google_dataflow_job" "big_data_job" {
   on_delete = "cancel" # or "drain"
   region = var.region
 
-  depends_on = [google_project_iam_member.dataflow_permissions]
+  depends_on = [google_bigquery_table.my_table]
 
   lifecycle {
   ignore_changes = [state]
