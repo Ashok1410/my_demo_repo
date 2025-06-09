@@ -7,7 +7,7 @@ resource "google_dataflow_job" "big_data_job" {
     inputFilePattern                   = "gs://copper-eye-461406-a8-bq-data-d69becfc/name_list.txt"
     outputTable                        = "${var.project_id}:${var.dataset_id}.name_list"
     bigQueryLoadingTemporaryDirectory = "gs://copper-eye-461406-a8-bq-data-d69becfc/dataflow/bq_temp"
-    schemaAutoDetect                   = "true"
+    JSONPath                          = "gs://copper-eye-461406-a8-bq-data-d69becfc/schema.json"
   }
 
   on_delete = "cancel" # or "drain"
